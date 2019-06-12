@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gioco dell'oca</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="src/css/style.css">
+    <!--link rel="stylesheet" type="text/css" href="src/css/style.min.css"-->
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"></script>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="info-player-wrapper row justify-content-center my-5">
+            <div class="info_player info_player_uno col-4">
+                <div class="inner">
+                    <div class="row">
+                        <div class="player m-0 pr-0 col-6">Player 1: <span class="nome_player"></span><p class="turno_attuale mb-2"></p></div>
+                        <p class="m-0 p-0 col-auto">|</p>
+                        <p class="m-0 pr-0 col-5">Lanci dado: <span class="lanci_dado"></span></p>
+                    </div>
+
+                    <p class="bonus_ottenuto my-1">Bonus: <span class="bonus_corrente"></span></p>
+                    <p class="malus_ottenuto my-1">Malus: <span class="malus_corrente"></span></p>
+                </div>
+            </div>
+            <div class="info_player info_player_due col-4">
+                <div class="inner">
+                    <div class="row">
+                        <div class="player m-0 pr-0 col-6">Player 2: <span class="nome_player"></span><p class="turno_attuale mb-2"></p></div>
+                        <p class="m-0 p-0 col-auto">|</p>
+                        <p class="m-0 pr-0 col-5">Lanci dado: <span class="lanci_dado"></span></p>
+                    </div>
+
+                    <p class="bonus_ottenuto my-1">Bonus: <span class="bonus_corrente"></span></p>
+                    <p class="malus_ottenuto my-1">Malus: <span class="malus_corrente"></span></p>
+                </div>
+            </div>
+
+            <div class="col-auto d-flex align-items-center">
+                <button id="dado"></button>
+            </div>
+        </div>
+
+        <div class="inner my-5">
+            <div class="scacchiera"></div>
+        </div>
+
+        <div class="modal fade" id="modalScore" tabindex="-1" role="dialog" aria-labelledby="modalScoreLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalScoreLabel">Congratulazioni</h5>
+                    </div>
+                    <div class="modal-body">
+                        <p>Vince il <span class="vincitore"></span></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary resetGame" data-dismiss="modal">Restart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="src/js/script.js"></script>
+</html>

@@ -1,0 +1,26 @@
+@mixin hoverTransition($transition) {
+	-webkit-transition: all $transition+s ease-in-out;
+	transition: all $transition+s ease-in-out;
+}
+
+@mixin displayFlex() {
+	display: -ms-flexbox;
+	display: flex;
+}
+
+@mixin flexAlignItems($align) {
+	-ms-flex-align: $align!important;
+	align-items: $align!important;
+}
+
+@mixin flexJustifyContent($justify) {
+	-ms-flex-pack: $justify!important;
+	justify-content: $justify!important;
+}
+
+@mixin border($top, $right, $bot, $left){
+  border-top: solid #f1f1f1 $top;
+  border-right: solid #f1f1f1 $right;
+  border-bottom: solid #f1f1f1 $bot;
+  border-left: solid #f1f1f1 $left;
+}
